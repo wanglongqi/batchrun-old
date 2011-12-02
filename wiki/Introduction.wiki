@@ -1,0 +1,30 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Howto use the module.
+
+
+= Details =
+
+Since this is a very simple module, there is not much to say. Meanwhile, the performance of this module is far from acceptable. *Modification* is welcomed, I am not good at this.
+
+This module read a file as a command list, one line will treated as a job. If your job need more then one line, you can use && or || to write it in one line, or simply write a new script to define your job. All jobs will be automaticly launched after the previous job has finished, this function is provided by pp module. but the annoy thing is that the pp module will always start a new python client as a ppserver, this process is really slow and costy. I really hope someone can help me get rid of this.
+
+This module can be use as follow:
+
+   python batchrun.py _testjobs_
+
+_testjobs_ is a file that jobs are defined in it.
+The available options are:
+
+  _--version_             show program's version number and exit
+
+  _-h, --help_            show this help message and exit
+
+  _-n NCPU, --ncpu=NCPU_  ncpu, use how many cpus for current job.
+
+  _-v_                    verbosity, dupulicate v to get more details.
+
+
+
