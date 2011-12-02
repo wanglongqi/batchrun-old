@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#Howto use the module.
 
 = Introduction =
 
@@ -25,6 +25,4 @@ The available options are:
   _-n NCPU, --ncpu=NCPU_  ncpu, use how many cpus for current job.
 
   _-v_                    verbosity, dupulicate v to get more details.
-
-
 
