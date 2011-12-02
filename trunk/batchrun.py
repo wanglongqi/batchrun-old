@@ -41,8 +41,6 @@ for file in others:
     if file==None:
         fid=sys.stdin
     else:
-        import os
-        print os.path.realpath(file)
         fid=open(file)
     jobs=[]
     jcount=0
