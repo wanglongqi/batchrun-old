@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 '''
-Created on 2011-4-11
+Created on 2014-3-17
 
 @author: WLQ
 '''
@@ -8,12 +8,7 @@ import sys
 import optparse
 import time
 
-def dofile(x):
-    import os
-    out=os.popen(x)
-    return out.read()
-
-parser = optparse.OptionParser(version="%prog 0.1")
+parser = optparse.OptionParser(version="%prog 0.2")
 
 parser.add_option('-n', '--ncpu',
         dest='ncpu',
