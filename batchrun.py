@@ -43,8 +43,8 @@ for file in others:
     jcount=0
     for line in fid:
         if options.verbosity>0:
-            jcount+=1
             print 'Jobs',jcount,':',line,
+            jcount+=1            
         jobs.append(line)
 
 if options.verbosity>2 and jcount>0:
