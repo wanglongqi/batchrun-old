@@ -91,11 +91,10 @@ while True:
         time.sleep(0.1)
                 
     except KeyboardInterrupt:
-        break
-        print 'Note: User Abort Determined!'
+        print '\nNote: User Abort Determined!'
         print jcount,'jobs has been submitted. Rest jobs will be abandoned.'
         print 'Submited job will not be affected. Kill the process if you will.'
-        pass
+        break
     except Exception,msg:
         print msg
         raise
