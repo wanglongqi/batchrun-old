@@ -74,9 +74,9 @@ while True:
                 if p!=0:
                     print rinfo[i][1],'exit abnormal. Exit code',p
                 if options.verbosity>1:
-                    print 'Job %d Finished! Total time %g Sec.'%(rinfo[i][3],time.clock()-rinfo[-1][1])
+                    print 'Job %d Finished! Total time %g Sec.'%(rinfo[i][3],time.clock()-rinfo[i][1])
                 if options.verbosity>3:
-                    print ':: Finished Job info :: \n Command: %s \t Total time: %g\n Job pid: %d\tJob count: %d'%(rinfo[-1][0],time.clock()-rinfo[-1][1],rinfo[-1][2],rinfo[-1][3])
+                    print ':: Finished Job info :: \n Command: %s \t Total time: %g\n Job pid: %d\tJob count: %d'%(rinfo[i][0],time.clock()-rinfo[i][1],rinfo[i][2],rinfo[i][3])
                 rjob.pop(i)
                 rinfo.pop(i)
                 
